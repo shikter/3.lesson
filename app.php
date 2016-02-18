@@ -4,8 +4,9 @@
 	// if there is ?name=... then $_get["name"]
 	$my_message = $_GET["message"];
 	$who = $_GET["who"];
+	$from_who = $_GET["from_who"];
 	
-	echo "Message: ".$my_message." and is to ".$who;
+	echo "Message: ".$my_message." and is to ".$who." from " .$from_who;
 
 ?>
 
@@ -17,6 +18,10 @@
 
 	<label for="message">Type your Message here:* <label><br>
 	<input type="text" name="message"><br><br>
+	
+	<label for="from_who">From who the message:* <label><br>
+	<input type="text" name="from_who"><br><br>
+	
 	<input type="submit" value="Send"><br>
 	
 	
