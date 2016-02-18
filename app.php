@@ -6,7 +6,7 @@
 	$who = $_GET["who"];
 	$from_who = $_GET["from_who"];
 	
-	echo "Message: ".$my_message." and is to ".$who." from " .$from_who;
+	echo "Message from ".$from_who. " to ".$who. " - " .$my_message;
 
 ?>
 
